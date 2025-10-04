@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d0d12;
+      --card: #1a1a25;
+      --text: #e0e0e0;
+      --accent: #a42828;
+    }
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+    header h1 {
+      color: var(--accent);
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      opacity: 0.8;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    .project {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    .project h2 {
+      color: var(--accent);
+      margin: 0 0 0.5rem;
+    }
+    .project p {
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    .project a {
+      display: inline-block;
+      margin-top: 0.75rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RedFlamz</h1>
+    
+  </header>
+
+  <main class="projects">
+    <div class="project">
+      <h2>CodeCanvas</h2><br>
+      <p>Nice and simple HTML editor with some cool features.</p>
+      <a href="https://redflamz.github.io/CodeCanvas" target="_blank"> View on GitHub →</a>
+    </div>
+
+    <div class="project">
+      <h2>Eaglercraft-Launcher</h2>
+      <p>Nice looking launcher for Eaglercraft clients.</p>
+      <a href="https://redflamz.github.io/Eaglercraft-Launcher" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="project">
+      <h2>Profile</h2><br>
+      <p>Check out my profile on Github.</p><br>
+      <a href="https://github.com/RedFlamz" target="_blank">View on GitHub →</a>
+    </div>
+
+    <!-- Add more project divs here -->
+  </main>
+
+
+</body>
+</html>
